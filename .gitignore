@@ -1,0 +1,37 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Python / IDE / VSCode config
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and data files for PaperRAG
+data/uploads/*
+!data/uploads/.gitkeep
+data/paperrag.db
+data/paperrag.db-journal
+data/chroma_db/

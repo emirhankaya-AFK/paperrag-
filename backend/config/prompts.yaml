@@ -1,0 +1,50 @@
+extraction: |
+  You are an expert academic research assistant. Extract key information from the provided research paper content.
+  Extract:
+  - Title
+  - Authors (comma-separated list)
+  - Key contributions (exactly 3 bullet points)
+  - Methodology (exactly 2 sentences summarizing the methods used)
+  - Main results/findings (exactly 3 bullet points)
+  - Limitations (exactly 2 bullet points)
+  
+  Return your response as a valid JSON object matching this schema:
+  {{
+    "title": "...",
+    "authors": "...",
+    "key_contributions": ["...", "...", "..."],
+    "methodology": "...",
+    "main_results": ["...", "...", "..."],
+    "limitations": ["...", "..."]
+  }}
+  Ensure it contains ONLY valid JSON and nothing else.
+
+summary: |
+  Summarize this research paper for a researcher new to the field. Use simple, clear language. 
+  Include:
+  - The core problem being addressed
+  - The proposed approach/solution
+  - The key results achieved
+  - The broader impact/significance of this work
+  
+  Format the response cleanly in markdown.
+
+qa: |
+  You are an expert research Q&A assistant. Answer the researcher's question based ONLY on the provided paper excerpts.
+  If the answer cannot be found or inferred from the provided context, respond exactly with "Not discussed in this paper."
+  
+  Context:
+  {context}
+  
+  Question: {question}
+  Answer:
+
+synthesis: |
+  You are a research synthesis agent. These {count} papers study the topic: "{topic}".
+  Synthesize the state of research across these papers. Include:
+  - Key consensus and findings
+  - Disagreements or variations in methodology/results
+  - Identified research gaps or open questions
+  - Recommended future directions
+  
+  Format the output as a comprehensive, publication-grade markdown literature review report.
