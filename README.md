@@ -1,5 +1,7 @@
 # PaperRAG - Academic Research Paper Assistant Agent
 
+[English](README.md) | [Türkçe](README_TR.md)
+
 PaperRAG is a complete, publication-grade Retrieval-Augmented Generation (RAG) system built to parse complex academic PDFs, analyze methodology, extract key contributions, build citation networks, query papers semantically, and compile synthesized literature reviews.
 
 ---
